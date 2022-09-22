@@ -1,0 +1,90 @@
+<!-- 
+HTML: HYPERTEXT(textos que contém links) MARKUP LANGUAGE: Linguagem de Marcação de Texto
+- Serve para estruturar textos, criar links, imagens, vídeos e etc...
+
+- TAG: também chamada de Elemento HTML: imagem, texto grande, link, parágrafo e etc...
+  - SINTAXE:  <p> conteúdo </p> 
+
+- ATRIBUTO: adiciona informação e configuração à uma TAG.
+  - SINTAXE: nome do atributo, sinal de igual, aspas duplas(abre), valor, aspas duplas(fecha):
+      <a href="#">link</a>  
+! + enter: carrega a estrutuba base do código html;
+
+<head> = cabeça - serve para colocar as configurações do documento;
+<meta> = configuração do próprio HTML.
+<body> = corpo -   
+-->
+
+<!-- explica o hhtml que tá sendo usado: 5-->
+<!DOCTYPE html>
+
+<!--abertura do html / tag root / raiz-->
+<html lang="pt-br">
+  <head>
+    <!-- atributo: charset="UTF-8": aceita caracteres especiais = acentuações -->
+    <meta charset="UTF-8" />
+    <!-- caracteres especiais = acentuações -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NLW Esports</title>
+  </head>
+  <body>
+    <!-- criada a tag <header> = introdução / cabeçalho do site - que não tem nenhum estilo / <div> = tag genérica  -->
+    <header>
+      <!-- criada a tag <div> = tag genérica -->
+      <div>
+        <!-- atributo: src =  localização da imagem / atributo: alt = texto que será apresentado se não encontrar imagem -->
+        <img src="https://github.com/Wwilber.png" alt="" />
+      </div>
+    </header>
+    <!-- criada a tag <main> = principal; representa o que é de principal na nossa página  -->
+    <main>
+      <section>
+        <div>
+          <h2>Meus Jogos</h2>
+          <p>Os games que eu mais curto jogar!</p>
+          <!-- <ul> lista não ordenada -->
+          <ul>
+            <!-- <li> item da lista -->
+            <li>
+              <!-- <a tag que cria um link: -->
+              <!-- atributo target="_blank" = abre em outra aba: -->
+              <a
+                target="_blank"
+                href="https://www.twitch.tv/directory/game/League%20of%20Legends"
+                ><img
+                  src="https://static-cdn.jtvnw.net/ttv-boxart/21779-188x250.jpg"
+                  alt="imagem do jogo league of legens"
+              /></a>
+            </li>
+
+            <!-- <li> item da lista -->
+            <li>
+              <!-- <a tag que cria um link: -->
+              <!-- atributo target="_blank" = abre em outra aba: -->
+              <a target="_blank" href=""
+                ><img
+                  src="https://occ-0-1910-3852.1.nflxso.net/dnm/api/v6/LmEnxtiAuzezXBjYXPuDgfZ4zZQ/AAAABc_l1LDNbuXfoAYDQvN_HY26XX4UCkAHi1I_4drhRb0yrH7hsc_Otsffamne4IiyzYSWCTQpIH2dTCUTz2Lou2KI0LlPU4FiehXnKdJv00r0ycR1Z3lXUiuYGz5_ZHwSOKGgkyLGqL2FRjaI8W41XYpGmAh9RMQX-iK65CwTey_RzAEB_YBr8w.webp?r=4ca"
+                  alt="imagem do jogo league of legens"
+              /></a>
+            </li>
+
+            <!-- <li> item da lista -->
+            <li>
+              <!-- <a tag que cria um link: -->
+              <!-- atributo target="_blank" = abre em outra aba: -->
+              <a
+                target="_blank"
+                href="https://www.twitch.tv/directory/game/League%20of%20Legends"
+                ><img
+                  src="https://static-cdn.jtvnw.net/ttv-boxart/21779-188x250.jpg"
+                  alt="imagem do jogo league of legens"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
+<!-- fechamento do html-->

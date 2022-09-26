@@ -56,10 +56,39 @@ body * {
   line-height: 160%;                              /* altura da linha */
 }
 
+header {
+  margin-top: 32px;
+  text-align: center;
+
+}
+
+header div {
+  width: 120px;
+  margin: auto;
+  background-image: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100%);
+  border-radius: 50%;
+
+  display: flex;
+  padding: 4px;
+  transition: transform .5s;
+}
+
+header div:hover{
+  transform: scale(1.1);  
+}
+
+header div img {
+  width: 100%;
+  border-radius: 50%;
+  /* border: 4px solid red; */
+}
+
+
+
 main {
   max-width: 580 px;            /* largura máxima */
   width:90%;                   /* utilizar 90% da largura máxima definida para o main; */
-  margin: auto;
+  margin:32px auto;
 
   display: grid;               /* libera o gap deixando a caixa debaixo da outra - sem alterar */
   gap: 24px;
@@ -99,6 +128,14 @@ section ul {
   margin-top: 24px;         /* margin do top das sections */
 }
 
+section ul li {
+  transition: transform .5s;
+}
+
+section ul li:hover{
+  transform: scale(1.1);  
+}
+
 .games-list.img {
   width: 90px;
   border-radius: 8px;
@@ -107,4 +144,8 @@ section ul {
 .channel-list img {
    border-radius: 50%;
    width: 70px;
+   border: 1px solid #443E54;
 }
+
+/* animation */
+

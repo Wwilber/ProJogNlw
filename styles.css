@@ -1,0 +1,110 @@
+/* CSS(CASCADING STYLE SHEETS - Folha de Estilo em Cascata: tecnologia que serve para fazer a apresentação visual para o cliente, dar estilos ao HTML 
+1. PRINCÍPIOS:
+
+1.1. DECLARATION(DECLARAÇÃO): Pedaço de código que irá ditar as propriedades e valores a serem aplicados a um elemento HTML.
+1.1.2. SINTAXE: seletor, chave(abre), propriedade, dois pontos, valor, ponto e vírgula, chave(fecha): 
+  body {
+    background: red;
+  }
+
+1.2. EPECIFICITY(ESPECIFICIDADE): cada seletor tem um peso e a soma dos pesos, será levada em conta para que determinada declaração seja mais específica:
+
+#id {
+  PESO 100
+}
+
+.class {
+  PESO 10
+}
+
+element {
+  PESO 1
+}
+*/
+
+/* reset do CSS: */
+
+
+* {
+  margin: 0;                                        /* tirar todas as margens */
+  padding: 0;                                       /* tirar os preenchimentos internos */
+  box-sizing: border-box;                           
+}
+
+/* tirar os pontinhos das listas::after */
+
+ul {
+  list-style: none;
+}
+
+body {
+  background-image: url(./assets/Fundo.jpg);      /* colocar a imagem como fundo do site */
+  background-position: top center;                /* posicionar a imagem do banckground: topo e centralizado */
+  background-size: 100% auto;                     /* para adaptar ao tamanho da tela ao movimentar */
+  background-repeat: no-repeat;                   /* não repetir a imagem */ 
+  background-color: #121214;                    /* cor de fundo */
+}
+
+/*
+main * {
+  border: 1px solid red;
+}
+*/
+
+body * { 
+  font-family: 'inter', sans-serif;               /* tipo de fonte copiada do google fonts */
+  line-height: 160%;                              /* altura da linha */
+}
+
+main {
+  max-width: 580 px;            /* largura máxima */
+  width:90%;                   /* utilizar 90% da largura máxima definida para o main; */
+  margin: auto;
+
+  display: grid;               /* libera o gap deixando a caixa debaixo da outra - sem alterar */
+  gap: 24px;
+
+  margin-top: 32px;
+
+}
+
+section {
+  color: white;             /* cor da fonte na section */
+  background-image: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100%); /* BORDA */
+  padding-top: 4px;
+  border-radius: 10 px;
+}
+
+section div {
+  background-color: #2A2634;
+  padding: 32px;      /* preenchimento interno do cartão */
+  padding-top: 24px;
+  border-radius: 8px;
+}
+
+section h2 {
+  letter-spacing: -0.47px;  /* espaço entre as letras */   
+}
+
+section p {
+  letter-spacing: -0.47px;  /* espaço entre as letras */   
+  color: #A1A1AA;
+}
+
+section ul {
+  display: flex;            /* coloca as caixas uma do lado da outra */
+  flex-wrap: wrap;          /* caso inclua mais item da lista, é colocado para baixo */
+  gap: 16px;                /* espaço entre as caixas - só funciona com display flex */
+
+  margin-top: 24px;         /* margin do top das sections */
+}
+
+.games-list.img {
+  width: 90px;
+  border-radius: 8px;
+}
+
+.channel-list img {
+   border-radius: 50%;
+   width: 70px;
+}

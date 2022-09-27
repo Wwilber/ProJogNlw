@@ -57,44 +57,43 @@ body * {
 }
 
 header {
-  margin-top: 32px;
-  text-align: center;
+  margin-top: 32px;                              /*margem do top da página;   poderia usar o PADDING TAMBÉM: DARIA NO MESMO*/ 
+  height: calc(120px + 32px);
+  
 
 }
 
 header div {
-  width: 120px;
+  width: 120px;       /* largura */
   margin: auto;
   background-image: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100%);
   border-radius: 50%;
 
   display: flex;
   padding: 4px;
-  transition: transform .5s;
+  transition: transform .5s; /* vai aplicar a transição transform por 5 segundos*/
 }
 
+/* aplicando transições */
 header div:hover{
   transform: scale(1.1);  
 }
 
 header div img {
-  width: 100%;
-  border-radius: 50%;
-  /* border: 4px solid red; */
+  width: 100%;              /* largura de */
+  border-radius: 50%;       /* arredondamento de borda de 50% */
+  /* border: 4px solid red; - SE FOSSE COR SÓLIDA */
 }
 
 
 
 main {
   max-width: 580 px;            /* largura máxima */
-  width:90%;                   /* utilizar 90% da largura máxima definida para o main; */
-  margin:32px auto;
+  width: 90%;                   /* utilizar 90% da largura máxima definida para o main; */
+  margin: 32px auto;            /* margem cima/baixo: 32 px e automático nas laterais */
 
   display: grid;               /* libera o gap deixando a caixa debaixo da outra - sem alterar */
   gap: 24px;
-
-  margin-top: 32px;
-
 }
 
 section {
@@ -149,3 +148,20 @@ section ul li:hover{
 
 /* animation */
 
+/* definir a animação */
+
+header div {
+  animation: fromTop .7s .4s backwards;
+}
+
+@keyframes fromTop {
+  from {
+      opacity: 0;
+      transform: translateY(-30px);
+  }
+  
+  top{
+      opacity: 1;
+      transform: translateY(0);
+  }
+}

@@ -148,20 +148,63 @@ section ul li:hover{
 
 /* animation */
 
-/* definir a animação */
-
+/* ELEMENTO QUE VAI SER APLICADA A ANIMAÇÃO FROMTOP: utiliza o nome e o tempo e o tempo de delay
+backwards - carrega as propriedades do fromTop para a header div*/
 header div {
-  animation: fromTop .7s .4s backwards;
+  animation: fromTop .7s .2s backwards;
 }
 
+/* definir a animação */
+
+/* DAR INÍCIO A ANIMAÇÃO: */
+
 @keyframes fromTop {
-  from {
-      opacity: 0;
-      transform: translateY(-30px);
+    /* DE: o elemento está na posição 0 do translateY: é o eixo de cima para baixo - iniciar no -30px*/
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    
+    /* PARA */
+    top{
+        opacity: 1;
+        transform: translateY(0);
+    }
   }
-  
-  top{
+
+/* ANIMAÇÃO DOS CARTÕES: */
+
+
+main section {
+
+  animation: fromBottom .7s backwards; 
+}
+
+/* ANIMAÇÃPO INDIVIDUAL POR SEÇÃO: */
+
+main section:nth-child(1){
+  animation-delay: 0;
+}
+
+main section:nth-child(2){
+  animation-delay: .4s;
+}
+
+main section:nth-child(3){
+  animation-delay: .7s;
+}
+
+
+@keyframes fromBottom {
+    /* DE: o elemento está na posição 0 do translateY: é o eixo de baixo para cima - iniciar no -30px*/
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+
+    /* PARA */
+    top{
       opacity: 1;
       transform: translateY(0);
-  }
+    }
 }
